@@ -1,16 +1,12 @@
 {
-  "name": "redux-router-location",
+  "name": "@etienne-dldc/redux-router-location",
   "version": "0.0.0-development",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Realytics/redux-router-location.git"
-  },
-  "author": "Etienne Dldc <etienne.dldc@outlook.fr>",
+  "author": "Etienne Dldc <e.deladonchamps@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "clean": "./node_modules/.bin/rimraf lib",
+    "clean": "rimraf lib",
     "build": "NODE_ENV=production yarn run clean && yarn run prettier && NODE_ENV=production webpack lib/index.js",
     "build-stats": "NODE_ENV=production yarn run clean && NODE_ENV=production webpack lib/index.js --json > stats.json",
     "prepare": "yarn run build",
@@ -40,12 +36,8 @@
     "semantic-release": "^8.2.0"
   },
   "description": "Put history.location in redux and keep it in sync.",
-  "bugs": {
-    "url": "https://github.com/Realytics/redux-router-location/issues"
-  },
-  "homepage": "https://github.com/Realytics/redux-router-location#readme",
   "directories": {
-    "lib": "lib",
+    "example": "example",
     "test": "test"
   },
   "jest": {
@@ -64,5 +56,13 @@
     "printWidth": 120,
     "tabWidth": 2,
     "trailingComma": "es5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etienne-dldc/redux-router-location.git"
+  },
+  "bugs": {
+    "url": "https://github.com/etienne-dldc/redux-router-location/issues"
+  },
+  "homepage": "https://github.com/etienne-dldc/redux-router-location#readme"
 }
