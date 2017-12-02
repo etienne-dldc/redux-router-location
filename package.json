@@ -41,11 +41,7 @@
     "test": "test"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
     "transform": {
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
@@ -64,5 +60,8 @@
   "bugs": {
     "url": "https://github.com/etienne-dldc/redux-router-location/issues"
   },
-  "homepage": "https://github.com/etienne-dldc/redux-router-location#readme"
+  "homepage": "https://github.com/etienne-dldc/redux-router-location#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
